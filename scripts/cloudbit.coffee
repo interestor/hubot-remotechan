@@ -1,5 +1,5 @@
-_DEVICE_ID = '243c200c0155'
-_ACCESS_TOKEN = '15f353ee9555f322179d7ca7767b32aa03c1b50803d7e8a465ee0f32232c42ea'
+_DEVICE_ID = process.env.DEVICE_ID
+_ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
 module.exports = (robot) ->
   robot.respond /rotate camera to (.*)/i, (msg) ->
